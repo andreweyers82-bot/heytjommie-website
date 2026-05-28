@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pry it forward | Music & Streetwear</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Hey Tjommie" style="height: 68px; width: auto;">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pryitfwd.html">pryitfwd</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://picsum.photos/id/201/2000/1200'); height: 85vh;">
+    <h1>pry it forward</h1>
+    <p style="font-size: 1.8rem; max-width: 800px;">Music • Streetwear • Forward Energy</p>
+  </section>
+
+  <section class="section">
+    <h2>pry it forward Music</h2>
+    <p style="max-width: 900px; margin: 0 auto 40px; font-size: 1.25rem;">
+      The official sound of pry it forward. Real stories, real energy from Cape Town.
+    </p>
+    
+    <!-- Spotify Embed Player -->
+    <iframe 
+      src="https://open.spotify.com/embed/artist/3Xq9RdxGnf7D9kpud3FctK?utm_source=generator" 
+      width="100%" 
+      height="460" 
+      frameborder="0" 
+      allow="encrypted-media">
+    </iframe>
+  </section>
+
+  <section class="section">
+    <h2>The pry it forward Movement</h2>
+    <div class="brands-grid">
+      <div class="brand-card">
+        <h3>Music</h3>
+        <p>Authentic sound from the streets</p>
+      </div>
+      <div class="brand-card">
+        <h3>Streetwear</h3>
+        <p>Clothing that speaks louder than words</p>
+      </div>
+      <div class="brand-card">
+        <h3>Vision</h3>
+        <p>Forward thinking lifestyle brand</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 pry it forward • A Hey Tjommie Brand • Cape Town, South Africa</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

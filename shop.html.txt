@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Hey Tjommie</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Hey Tjommie" style="height: 60px; width: auto;">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pryitfwd.html">pryitfwd</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <section class="hero" style="height: 50vh; margin-top: 70px;">
+    <h1>Shop Hey Tjommie</h1>
+    <p>Clothing • Apparel • Perfumes</p>
+  </section>
+
+  <section class="section">
+    <h2>Clothing & Apparel</h2>
+    <div class="products-grid" id="clothing-grid"></div>
+
+    <h2>Perfumes & Scents</h2>
+    <div class="products-grid" id="perfume-grid"></div>
+  </section>
+
+  <!-- pry it forward Music Button -->
+  <div style="text-align:center; margin: 60px 0;">
+    <a href="https://open.spotify.com/artist/3Xq9RdxGnf7D9kpud3FctK" 
+       target="_blank" 
+       class="btn">
+      🎵 Listen to pry it forward Music
+    </a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
