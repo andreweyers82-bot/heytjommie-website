@@ -34,7 +34,7 @@
       z-index: 1000;
       background: rgba(10, 10, 10, 0.85);
       backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(0, 229, 255, 0.2); /* Cyan border for shop */
+      border-bottom: 1px solid rgba(0, 229, 255, 0.2);
     }
 
     nav {
@@ -125,12 +125,13 @@
 
     .product-image {
       width: 100%;
-      height: 250px;
+      height: 300px; /* Made slightly taller so photos look great */
       background: #222;
       display: flex;
       align-items: center;
       justify-content: center;
       border-bottom: 1px solid #333;
+      overflow: hidden;
     }
 
     .product-info {
@@ -216,39 +217,36 @@
       <!-- Product 1 -->
       <div class="product-card">
         <div class="product-image">
-          <i class="fas fa-tshirt" style="font-size: 4rem; color: #555;"></i>
+          <img src="shirt.jpg" alt="Signature Tee" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="product-info">
           <h3 class="product-title">Signature Tee</h3>
           <p class="product-price">R 350.00</p>
-          <!-- Swap the "#" below for this specific item's Yoco link! -->
-          <a href="#" target="_blank" class="btn">Buy Now</a>
+          <a href="YOUR_YOCO_ITEM_LINK_HERE" target="_blank" class="btn">Buy Now</a>
         </div>
       </div>
 
       <!-- Product 2 -->
       <div class="product-card">
         <div class="product-image">
-          <i class="fas fa-spray-can" style="font-size: 4rem; color: #555;"></i>
+          <img src="scent.jpg" alt="Tjommie Scent No. 1" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="product-info">
           <h3 class="product-title">Tjommie Scent No. 1</h3>
           <p class="product-price">R 500.00</p>
-          <!-- Swap the "#" below for this specific item's Yoco link! -->
-          <a href="#" target="_blank" class="btn">Buy Now</a>
+          <a href="YOUR_YOCO_ITEM_LINK_HERE" target="_blank" class="btn">Buy Now</a>
         </div>
       </div>
 
       <!-- Product 3 -->
       <div class="product-card">
         <div class="product-image">
-          <i class="fas fa-hat-cowboy" style="font-size: 4rem; color: #555;"></i>
+          <img src="cap.jpg" alt="Streetwear Cap" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="product-info">
           <h3 class="product-title">Streetwear Cap</h3>
           <p class="product-price">R 250.00</p>
-          <!-- Swap the "#" below for this specific item's Yoco link! -->
-          <a href="#" target="_blank" class="btn">Buy Now</a>
+          <a href="YOUR_YOCO_ITEM_LINK_HERE" target="_blank" class="btn">Buy Now</a>
         </div>
       </div>
 
