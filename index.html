@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hey Tjommie | Good Vibes • Real Energy</title>
+  
+  <!-- Modern Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Icons (WhatsApp, Socials, etc.) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Your Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,7 +19,7 @@
   <header>
     <nav>
       <div class="logo">
-        <img src="images/logo.jpg" alt="Hey Tjommie" style="height: 68px; width: auto;">
+        <img src="logo tjommie.jpeg" alt="Hey Tjommie" style="height: 68px; width: auto; border-radius: 50%;">
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -27,56 +35,95 @@
   <section class="hero">
     <h1>Hey Tjommie!</h1>
     <p>pryitfwd • Streetwear • Music • Apparel • Scents</p>
-    <a href="shop.html" class="btn">Shop Now</a>
+    <a href="shop.html" class="btn" style="margin-top: 20px; padding: 10px 25px; background: #ff00ff; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; text-transform: uppercase;">Shop Now</a>
   </section>
 
   <section id="brands" class="section">
-    <h2>Our Brands</h2>
+    <h2 style="text-align: center; margin-bottom: 30px;">Our Brands</h2>
     <div class="brands-grid">
-      <div class="brand-card">pryitfwd<br><small>Streetwear + Music</small></div>
-      <div class="brand-card">Hey Tjommie Apparel<br><small>Clothing</small></div>
-      <div class="brand-card">Hey Tjommie Scents<br><small>Perfumes</small></div>
+      <div class="brand-card">pryitfwd<br><small style="font-size: 0.9rem; color: #aaa;">Streetwear + Music</small></div>
+      <div class="brand-card">Hey Tjommie Apparel<br><small style="font-size: 0.9rem; color: #aaa;">Clothing</small></div>
+      <div class="brand-card">Hey Tjommie Scents<br><small style="font-size: 0.9rem; color: #aaa;">Perfumes</small></div>
     </div>
   </section>
 
-    <!-- pry it forward Music Section -->
-  <section class="section" style="background: #111;">
+  <!-- pry it forward Music Section -->
+  <section class="section" style="background: #111; padding: 50px 20px; text-align: center;">
     <h2>pry it forward Music</h2>
-    <p style="margin-bottom: 40px; font-size: 1.3rem;">The Official Sound • Cape Town</p>
+    <p style="margin-bottom: 20px; font-size: 1.3rem;">The Official Sound • Cape Town</p>
     
+    <!-- Social Links -->
+    <div class="social-music-links" style="margin-bottom: 40px;">
+      <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 15px;">Join the 10,000+ community</p>
+      <a href="#" target="_blank" style="color: #ff0000; font-size: 2rem; margin: 0 15px;"><i class="fab fa-youtube"></i></a>
+      <a href="#" target="_blank" style="color: #ffffff; font-size: 2rem; margin: 0 15px;"><i class="fab fa-tiktok"></i></a>
+      <a href="#" target="_blank" style="color: #ff5500; font-size: 2rem; margin: 0 15px;"><i class="fab fa-soundcloud"></i></a>
+    </div>
+
     <!-- Spotify Embed -->
-    <iframe 
-      src="https://open.spotify.com/embed/artist/3Xq9RdxGnf7D9kpud3FctK?utm_source=generator" 
-      width="100%" 
-      height="380" 
-      frameborder="0" 
-      allow="encrypted-media"
-      style="margin-bottom: 50px; border-radius: 12px;">
-    </iframe>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <iframe 
+        src="https://open.spotify.com/embed/artist/3Xq9RdxGnf7D9kpud3FctK?utm_source=generator" 
+        width="100%" 
+        height="380" 
+        frameborder="0" 
+        allow="encrypted-media"
+        style="margin-bottom: 50px; border-radius: 12px;">
+      </iframe>
+    </div>
 
     <!-- Static Top Tracks -->
     <h3 style="margin-bottom: 25px; color: #ff00ff;">Top Tracks</h3>
-    <div class="top-tracks-grid" id="top-tracks"></div>
+    
+    <div class="top-tracks-grid" id="top-tracks" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; max-width: 1000px; margin: 0 auto;">
+      
+      <!-- Track Card 1 -->
+      <div class="track-card" style="background: #222; padding: 15px; border-radius: 8px; width: 200px;">
+        <img src="images/track1.jpg" alt="Track 1" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 10px; background: #333;">
+        <h4 style="margin: 0; font-size: 1.1rem; color: #fff;">Electric Horizons</h4>
+        <p style="margin: 5px 0 0; font-size: 0.8rem; color: #00e5ff;">EDM / Trance</p>
+        <a href="#" class="btn" style="display: inline-block; margin-top: 15px; padding: 8px 20px; background: #333; color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.9rem;">Listen</a>
+      </div>
+
+      <!-- Track Card 2 -->
+      <div class="track-card" style="background: #222; padding: 15px; border-radius: 8px; width: 200px;">
+        <img src="images/track2.jpg" alt="Track 2" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 10px; background: #333;">
+        <h4 style="margin: 0; font-size: 1.1rem; color: #fff;">Neon Pulse</h4>
+        <p style="margin: 5px 0 0; font-size: 0.8rem; color: #00e5ff;">Synth-pop (528Hz Mix)</p>
+        <a href="#" class="btn" style="display: inline-block; margin-top: 15px; padding: 8px 20px; background: #333; color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.9rem;">Listen</a>
+      </div>
+
+      <!-- Track Card 3 -->
+      <div class="track-card" style="background: #222; padding: 15px; border-radius: 8px; width: 200px;">
+        <img src="images/track3.jpg" alt="Track 3" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 10px; background: #333;">
+        <h4 style="margin: 0; font-size: 1.1rem; color: #fff;">Roots & Rhythm</h4>
+        <p style="margin: 5px 0 0; font-size: 0.8rem; color: #00e5ff;">Afrobeat / Reggae</p>
+        <a href="#" class="btn" style="display: inline-block; margin-top: 15px; padding: 8px 20px; background: #333; color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.9rem;">Listen</a>
+      </div>
+
+    </div>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Get In Touch</h2>
-    <form action="https://formspree.io/f/YOUR_CODE_HERE" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
+  <section id="contact" class="section" style="padding: 50px 20px; text-align: center; max-width: 600px; margin: 0 auto;">
+    <h2 style="margin-bottom: 20px;">Get In Touch</h2>
+    <form action="https://formspree.io/f/mdajbgrz" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+      <input type="text" name="name" placeholder="Your Name" required style="padding: 12px; border-radius: 5px; border: 1px solid #333; background: #111; color: #fff;">
+      <input type="email" name="email" placeholder="Your Email" required style="padding: 12px; border-radius: 5px; border: 1px solid #333; background: #111; color: #fff;">
+      <textarea name="message" placeholder="Your Message" rows="5" required style="padding: 12px; border-radius: 5px; border: 1px solid #333; background: #111; color: #fff;"></textarea>
+      <button type="submit" class="btn" style="padding: 12px; background: #00e5ff; color: #000; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; text-transform: uppercase;">Send Message</button>
     </form>
   </section>
 
-  <a href="https://wa.me/27812345678" class="whatsapp-float" target="_blank">
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/27783727973" class="whatsapp-float" target="_blank" style="position: fixed; bottom: 30px; right: 30px; background-color: #25D366; color: white; border-radius: 50px; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; font-size: 35px; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); z-index: 1000; transition: transform 0.3s ease;">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <footer>
+  <footer style="text-align: center; padding: 20px; background: #0a0a0a; color: #555; margin-top: 40px; border-top: 1px solid #222;">
     <p>&copy; 2026 Hey Tjommie • Cape Town, South Africa</p>
   </footer>
 
+  <!-- Link to your JavaScript -->
   <script src="js/script.js"></script>
 </body>
 </html>
