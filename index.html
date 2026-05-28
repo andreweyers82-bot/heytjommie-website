@@ -5,48 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hey Tjommie | Good Vibes • Real Energy</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
     <nav>
-      <div class="logo">Hey Tjommie</div>
-      <ul>
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Hey Tjommie" style="height: 68px; width: auto;">
+      </div>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#brands">Brands</a></li>
+        <li><a href="pryitfwd.html">pryitfwd</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="hamburger">☰</div>
     </nav>
   </header>
 
-  <section id="home" class="hero">
+  <section class="hero">
     <h1>Hey Tjommie!</h1>
-    <p>Positive Energy • Street Culture • Cape Town Pride</p>
+    <p>pryitfwd • Streetwear • Music • Apparel • Scents</p>
     <a href="shop.html" class="btn">Shop Now</a>
   </section>
 
   <section id="brands" class="section">
     <h2>Our Brands</h2>
     <div class="brands-grid">
-      <div class="brand-card"><h3>pryitfwd</h3><p>Forward Thinking Streetwear</p></div>
-      <div class="brand-card"><h3>JaBeZ..Music</h3><p>Real Music from the Streets</p></div>
-      <div class="brand-card"><h3>Hey Tjommie Apparel</h3><p>Premium Clothing</p></div>
-      <div class="brand-card"><h3>Hey Tjommie Scents</h3><p>Luxury Perfumes</p></div>
+      <div class="brand-card">pryitfwd<br><small>Streetwear + Music</small></div>
+      <div class="brand-card">Hey Tjommie Apparel<br><small>Clothing</small></div>
+      <div class="brand-card">Hey Tjommie Scents<br><small>Perfumes</small></div>
     </div>
   </section>
 
-  <section id="social" class="section">
-    <h2>Follow The Vibes</h2>
-    <div class="social-links">
-      <a href="https://instagram.com/heytjommie" target="_blank">Instagram</a>
-      <a href="https://tiktok.com/@heytjommie" target="_blank">TikTok</a>
-      <a href="https://facebook.com/heytjommie" target="_blank">Facebook</a>
-      <a href="https://spotify.com/artist/..." target="_blank">Spotify</a>
-    </div>
+    <!-- pry it forward Music Section -->
+  <section class="section" style="background: #111;">
+    <h2>pry it forward Music</h2>
+    <p style="margin-bottom: 40px; font-size: 1.3rem;">The Official Sound • Cape Town</p>
+    
+    <!-- Spotify Embed -->
+    <iframe 
+      src="https://open.spotify.com/embed/artist/3Xq9RdxGnf7D9kpud3FctK?utm_source=generator" 
+      width="100%" 
+      height="380" 
+      frameborder="0" 
+      allow="encrypted-media"
+      style="margin-bottom: 50px; border-radius: 12px;">
+    </iframe>
+
+    <!-- Static Top Tracks -->
+    <h3 style="margin-bottom: 25px; color: #ff00ff;">Top Tracks</h3>
+    <div class="top-tracks-grid" id="top-tracks"></div>
   </section>
+
+  <section id="contact" class="section">
+    <h2>Get In Touch</h2>
+    <form action="https://formspree.io/f/YOUR_CODE_HERE" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <a href="https://wa.me/27812345678" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <footer>
     <p>&copy; 2026 Hey Tjommie • Cape Town, South Africa</p>
