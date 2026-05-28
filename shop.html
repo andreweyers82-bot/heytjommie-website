@@ -3,48 +3,269 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop - Hey Tjommie</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Hey Tjommie | Shop</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --bg-dark: #0a0a0a;
+      --neon-pink: #ff00ff;
+      --neon-cyan: #00e5ff;
+      --text-light: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(10, 10, 10, 0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0, 229, 255, 0.2); /* Cyan border for shop */
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo img {
+      box-shadow: 0 0 15px var(--neon-cyan);
+      transition: transform 0.3s ease;
+    }
+
+    .logo img:hover { transform: scale(1.1) rotate(5deg); }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 500;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover { color: var(--neon-cyan); }
+
+    .hamburger {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: var(--neon-pink);
+    }
+
+    .hero-shop {
+      padding: 80px 20px;
+      text-align: center;
+      background: #111;
+      border-bottom: 2px solid var(--neon-pink);
+    }
+
+    .hero-shop h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 0px var(--neon-cyan);
+      margin: 0 0 10px 0;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .products-grid {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      width: 300px;
+      overflow: hidden;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(255, 0, 255, 0.2);
+      border-color: var(--neon-pink);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 250px;
+      background: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #333;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-title {
+      font-size: 1.3rem;
+      margin: 0 0 10px 0;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      color: var(--neon-cyan);
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--neon-pink);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--neon-cyan);
+      color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger { display: block; }
+      .nav-links {
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        flex-direction: column;
+        background: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+        transition: right 0.4s ease;
+      }
+      .nav-links.active { right: 0; }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <nav>
       <div class="logo">
-        <img src="images/logo.jpg" alt="Hey Tjommie" style="height: 60px; width: auto;">
+        <a href="index.html"><img src="logo.jpg" alt="Hey Tjommie Logo" style="height: 68px; width: 68px; object-fit: cover; border-radius: 50%;"></a>
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="pryitfwd.html">pryitfwd</a></li>
-        <li><a href="shop.html">Shop</a></li>
+        <li><a href="shop.html" style="color: var(--neon-cyan);">Shop</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
-      <div class="hamburger">☰</div>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
   </header>
 
-  <section class="hero" style="height: 50vh; margin-top: 70px;">
-    <h1>Shop Hey Tjommie</h1>
-    <p>Clothing • Apparel • Perfumes</p>
+  <section class="hero-shop">
+    <h1>The Drop</h1>
+    <p style="font-size: 1.2rem; color: #ccc;">Exclusive Streetwear, Apparel & Scents</p>
   </section>
 
   <section class="section">
-    <h2>Clothing & Apparel</h2>
-    <div class="products-grid" id="clothing-grid"></div>
+    <div class="products-grid">
+      
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="product-image">
+          <i class="fas fa-tshirt" style="font-size: 4rem; color: #555;"></i>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Signature Tee</h3>
+          <p class="product-price">R 350.00</p>
+          <!-- Swap the "#" below for this specific item's Yoco link! -->
+          <a href="#" target="_blank" class="btn">Buy Now</a>
+        </div>
+      </div>
 
-    <h2>Perfumes & Scents</h2>
-    <div class="products-grid" id="perfume-grid"></div>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="product-image">
+          <i class="fas fa-spray-can" style="font-size: 4rem; color: #555;"></i>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Tjommie Scent No. 1</h3>
+          <p class="product-price">R 500.00</p>
+          <!-- Swap the "#" below for this specific item's Yoco link! -->
+          <a href="#" target="_blank" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-image">
+          <i class="fas fa-hat-cowboy" style="font-size: 4rem; color: #555;"></i>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Streetwear Cap</h3>
+          <p class="product-price">R 250.00</p>
+          <!-- Swap the "#" below for this specific item's Yoco link! -->
+          <a href="#" target="_blank" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <!-- pry it forward Music Button -->
-  <div style="text-align:center; margin: 60px 0;">
-    <a href="https://open.spotify.com/artist/3Xq9RdxGnf7D9kpud3FctK" 
-       target="_blank" 
-       class="btn">
-      🎵 Listen to pry it forward Music
-    </a>
-  </div>
+  <footer style="text-align: center; padding: 30px 20px; background: #050505; color: #555; border-top: 1px solid #222; margin-top: 40px;">
+    <p style="margin: 0;">&copy; 2026 Hey Tjommie • Cape Town, South Africa</p>
+  </footer>
 
-  <script src="js/script.js"></script>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>
